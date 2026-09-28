@@ -1,0 +1,44 @@
+generated: '2026-09-28'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 2
+  own: 2
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - website
+hosts:
+- host: api.madescientific.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: madescientific.com
+  role: api
+  relation: own
+- host: madescientific.com
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Newsroom
+  - Website
+  - Documentation
+  - Contact
+  - PrivacyPolicy
+  - TermsOfService
+  serves:
+  - docs
+  - cdn
+  - hosting
+  vendor: cloudflare
+  registrable_domain: madescientific.com
+  role: website
+  relation: own

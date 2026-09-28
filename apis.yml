@@ -1,23 +1,71 @@
 aid: biocentriq
+
 name: BioCentriq
-description: 'BioCentriq is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Made Scientific, formerly BioCentriq, is a global cell therapy contract development and manufacturing organization (CDMO) based in New Jersey and part of GC Corporation. It offers end‑to‑end services including process development, GMP manufacturing, aseptic fill‑finish, quality control, regulatory consulting, and workforce development, supporting autologous and allogeneic cell therapies. The company rebranded in 2025 to reflect its expanded capabilities and global reach, providing flexible partnership models for biotech innovators.'
+
 url: https://raw.githubusercontent.com/api-evangelist/biocentriq/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
-- Company
-apis: []
+- Cell Therapy
+- CDMO
+- Biotechnology
+- Manufacturing
+- USA
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/biocentriq-hosts.yml
+- type: Vendors
+  url: vendors/biocentriq-vendors.yml
+- type: Newsroom
+  url: https://madescientific.com/news
+- type: DomainSecurity
+  url: security/biocentriq-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/biocentriq_stock/
+  url: https://madescientific.com/
+
+- type: Documentation
+  url: https://madescientific.com/about
+- type: Contact
+  url: https://madescientific.com/contact
+- type: PrivacyPolicy
+  url: https://madescientific.com/privacy-policy
+- type: TermsOfService
+  url: https://madescientific.com/terms-of-use
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI, AsyncAPI, GraphQL, gRPC, or WSDL contract was discovered on the API host.
+  evidence:
+    - url: https://api.madescientific.com/openapi.json
+      status: 0
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

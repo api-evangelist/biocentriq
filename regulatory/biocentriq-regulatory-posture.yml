@@ -1,0 +1,28 @@
+generated: "2026-09-28"
+method: searched
+source: "https://madescientific.com/terms-of-use"
+signals:
+  age_assurance:
+    evidence:
+      - source: "https://madescientific.com/terms-of-use"
+        http_status: 200
+        fetched: "2026-09-28"
+        quote: "If you are under 13 years of age, you may not use or register to use the Platform."
+        section: "User Eligibility"
+        note: "Sets minimum age requirement, indicating age assurance policy."
+  data_retention:
+    evidence:
+      - source: "https://madescientific.com/terms-of-use"
+        http_status: 200
+        fetched: "2026-09-28"
+        quote: "We retain our right to ... edit, refuse to post or remove any material that we find to be in violation..."
+        section: "Content Moderation"
+        note: "Mentions retention of rights to edit or remove content, implying data retention practices."
+  transparency_report:
+    evidence:
+      - source: "https://madescientific.com/terms-of-use"
+        http_status: 200
+        fetched: "2026-09-28"
+        quote: "Made Scientific may disclose any content or electronic communication of any kind: (i) to satisfy any law, regulation, or government request; (ii) if such disclosure is necessary or appropriate to operate the Platform; or (iii) to protect the rights or property of Made Scientific, its users or third party service providers."
+        section: "Disclosures"
+        note: "Describes conditions for content disclosure, relevant to transparency reporting."
